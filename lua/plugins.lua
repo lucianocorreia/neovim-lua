@@ -16,8 +16,6 @@ return require("packer").startup(
         use "wbthomason/packer.nvim"
 
         -- use "christianchiarulli/nvcode-color-schemes.vim"
-        use "tjdevries/colorbuddy.vim"
-        use "marko-cerovac/material.nvim"
         use "gruvbox-community/gruvbox"
         use "norcalli/nvim-colorizer.lua"
 
@@ -62,7 +60,7 @@ return require("packer").startup(
         use "voldikss/vim-floaterm"
         use "windwp/nvim-autopairs"
         use "mattn/emmet-vim"
-        use "hrsh7th/vim-vsnip"
+        use "norcalli/snippets.nvim"
         use "xabikos/vscode-javascript"
         use "dsznajder/vscode-es7-javascript-react-snippets"
         use "golang/vscode-go"
