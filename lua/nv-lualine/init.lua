@@ -1,6 +1,6 @@
 require("lualine").setup {
     options = {
-        theme = "gruvbox",
+        theme = "ayu_mirage",
         section_separators = {"", ""},
         component_separators = {"", ""},
         icons_enabled = true

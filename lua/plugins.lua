@@ -17,6 +17,7 @@ return require("packer").startup(
 
         -- use "christianchiarulli/nvcode-color-schemes.vim"
         use "gruvbox-community/gruvbox"
+        use "sainnhe/sonokai"
         use "norcalli/nvim-colorizer.lua"
 
         use "kyazdani42/nvim-web-devicons" -- icons
