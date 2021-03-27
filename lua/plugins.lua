@@ -15,7 +15,9 @@ return require("packer").startup(
         -- Packer can manage itself as an optional plugin
         use "wbthomason/packer.nvim"
 
-        use "christianchiarulli/nvcode-color-schemes.vim"
+        -- use "christianchiarulli/nvcode-color-schemes.vim"
+        use "tjdevries/colorbuddy.vim"
+        use "marko-cerovac/material.nvim"
         use "gruvbox-community/gruvbox"
         use "norcalli/nvim-colorizer.lua"
 
@@ -66,6 +68,7 @@ return require("packer").startup(
         use "golang/vscode-go"
         use "rust-lang/vscode-rust"
         use "ChristianChiarulli/html-snippets"
+        use "terryma/vim-multiple-cursors"
 
         -- Start
         use "mhinz/vim-startify"

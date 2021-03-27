@@ -19,3 +19,4 @@ require("nv-treesitter")
 -- LSP Config
 require("nv-lspconfig")
 require("nv-lspconfig.nv-gopls")
+require("nv-completion")
