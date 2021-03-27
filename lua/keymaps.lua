@@ -38,7 +38,7 @@ vim.api.nvim_set_keymap("n", "<C-j>", "<C-w>j", {silent = true})
 vim.api.nvim_set_keymap("n", "<C-k>", "<C-w>k", {silent = true})
 vim.api.nvim_set_keymap("n", "<C-l>", "<C-w>l", {silent = true})
 
-vim.api.nvim_set_keymap("n", "<Leader>", ":WhichKey '<Space>'<CR>", {silent = true})
+vim.api.nvim_set_keymap("n", "<F5>", ":WhichKey '<Space>'<CR>", {silent = true})
 
 -- Better nav for omnicomplete
 -- vim.cmd('inoremap <expr> <c-j> (\"\\<C-n>\")')
