@@ -8,7 +8,9 @@ vim.g.sonokai_style = "atlantis"
 vim.g.sonokai_enable_italic = 1
 vim.g.sonokai_disable_italic_comment = 1
 
-vim.cmd("colorscheme sonokai")
+vim.g.everforest_background = "hard"
+
+vim.cmd("colorscheme everforest")
 
 -- darker, lighter, palenight, oceanic, deep ocean,
 -- vim.g.material_style = "deep ocean"
