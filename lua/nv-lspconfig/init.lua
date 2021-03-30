@@ -80,6 +80,7 @@ local servers = {
     "pyright",
     "rust_analyzer",
     "html",
+    "intelephense"
 }
 
 for _, lsp in ipairs(servers) do

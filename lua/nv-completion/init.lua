@@ -23,6 +23,7 @@ _G.tab_complete = function()
         return t "<Tab>"
     end
 end
+
 _G.s_tab_complete = function()
     if vim.fn.pumvisible() == 1 then
         return t "<C-p>"
