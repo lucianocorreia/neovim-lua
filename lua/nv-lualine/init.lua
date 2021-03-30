@@ -1,6 +1,6 @@
 require("lualine").setup {
     options = {
-        theme = "ayu_mirage",
+        theme = "forest_night",
         section_separators = {"", ""},
         component_separators = {"", ""},
         icons_enabled = true
