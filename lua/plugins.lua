@@ -68,6 +68,7 @@ return require("packer").startup(
         use "rust-lang/vscode-rust"
         use "ChristianChiarulli/html-snippets"
         use "terryma/vim-multiple-cursors"
+        use "MattesGroeger/vim-bookmarks"
 
         -- Start
         use "mhinz/vim-startify"
