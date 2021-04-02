@@ -140,10 +140,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/lucianocorreia/.local/share/nvim/site/pack/packer/start/popup.nvim"
   },
-  ["snippets.nvim"] = {
-    loaded = true,
-    path = "/Users/lucianocorreia/.local/share/nvim/site/pack/packer/start/snippets.nvim"
-  },
   ["telescope-media-files.nvim"] = {
     loaded = true,
     path = "/Users/lucianocorreia/.local/share/nvim/site/pack/packer/start/telescope-media-files.nvim"
@@ -179,6 +175,14 @@ _G.packer_plugins = {
   ["vim-startify"] = {
     loaded = true,
     path = "/Users/lucianocorreia/.local/share/nvim/site/pack/packer/start/vim-startify"
+  },
+  ["vim-vsnip"] = {
+    loaded = true,
+    path = "/Users/lucianocorreia/.local/share/nvim/site/pack/packer/start/vim-vsnip"
+  },
+  ["vim-vsnip-integ"] = {
+    loaded = true,
+    path = "/Users/lucianocorreia/.local/share/nvim/site/pack/packer/start/vim-vsnip-integ"
   },
   ["vim-which-key"] = {
     loaded = true,

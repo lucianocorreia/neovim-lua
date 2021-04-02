@@ -1,6 +1,6 @@
 require("lualine").setup {
     options = {
-        theme = "forest_night",
+        theme = "gruvbox",
         section_separators = {"", ""},
         component_separators = {"", ""},
         icons_enabled = true

@@ -1,4 +1,4 @@
-vim.g.completion_enable_snippet = "snippets.nvim"
+vim.g.completion_enable_snippet = "vim-vsnip"
 
 local t = function(str)
     return vim.api.nvim_replace_termcodes(str, true, true, true)
