@@ -15,4 +15,4 @@ vim.cmd("colorscheme everforest")
 -- darker, lighter, palenight, oceanic, deep ocean,
 -- vim.g.material_style = "deep ocean"
 -- vim.g.material_italics = 1
--- require("colorbuddy").colorscheme("gruvbox")
+-- require('colorbuddy').colorscheme('gruvbuddy')

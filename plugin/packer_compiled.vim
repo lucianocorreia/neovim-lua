@@ -40,6 +40,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/lucianocorreia/.local/share/nvim/site/pack/packer/start/bracey.vim"
   },
+  ["colorbuddy.vim"] = {
+    loaded = true,
+    path = "/Users/lucianocorreia/.local/share/nvim/site/pack/packer/start/colorbuddy.vim"
+  },
   ["completion-nvim"] = {
     loaded = true,
     path = "/Users/lucianocorreia/.local/share/nvim/site/pack/packer/start/completion-nvim"
@@ -55,6 +59,10 @@ _G.packer_plugins = {
   gruvbox = {
     loaded = true,
     path = "/Users/lucianocorreia/.local/share/nvim/site/pack/packer/start/gruvbox"
+  },
+  ["gruvbuddy.nvim"] = {
+    loaded = true,
+    path = "/Users/lucianocorreia/.local/share/nvim/site/pack/packer/start/gruvbuddy.nvim"
   },
   ["html-snippets"] = {
     loaded = true,

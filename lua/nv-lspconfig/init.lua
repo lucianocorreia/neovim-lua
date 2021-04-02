@@ -78,7 +78,6 @@ local servers = {
     "tsserver",
     "bashls",
     "pyright",
-    "rust_analyzer",
     "html",
     "intelephense"
 }
@@ -89,6 +88,29 @@ for _, lsp in ipairs(servers) do
         capabilities = lsp_status.capabilities
     }
 end
+
+
+-- Rust manual config
+nvim_lsp.rust_analyzer.setup({
+    on_attach=on_attach,
+    capabilities = lsp_status.capabilities,
+    settings = {
+        ["rust-analyzer"] = {
+            assist = {
+                importMergeBehavior = "last",
+                importPrefix = "by_self",
+            },
+            cargo = {
+                loadOutDirsFromCheck = true
+            },
+            procMacro = {
+                enable = true
+            },
+        }
+    }
+})
+
+
 
 -- Setup diagnostics formaters and linters for non LSP provided files
 nvim_lsp.diagnosticls.setup {
