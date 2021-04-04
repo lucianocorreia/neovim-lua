@@ -89,28 +89,27 @@ for _, lsp in ipairs(servers) do
     }
 end
 
-
 -- Rust manual config
-nvim_lsp.rust_analyzer.setup({
-    on_attach=on_attach,
-    capabilities = lsp_status.capabilities,
-    settings = {
-        ["rust-analyzer"] = {
-            assist = {
-                importMergeBehavior = "last",
-                importPrefix = "by_self",
-            },
-            cargo = {
-                loadOutDirsFromCheck = true
-            },
-            procMacro = {
-                enable = true
-            },
+nvim_lsp.rust_analyzer.setup(
+    {
+        on_attach = on_attach,
+        capabilities = lsp_status.capabilities,
+        settings = {
+            ["rust-analyzer"] = {
+                assist = {
+                    importMergeBehavior = "last",
+                    importPrefix = "by_self"
+                },
+                cargo = {
+                    loadOutDirsFromCheck = true
+                },
+                procMacro = {
+                    enable = true
+                }
+            }
         }
     }
-})
-
-
+)
 
 -- Setup diagnostics formaters and linters for non LSP provided files
 nvim_lsp.diagnosticls.setup {
@@ -124,7 +123,9 @@ nvim_lsp.diagnosticls.setup {
         "json",
         "yaml",
         "toml",
-        "html"
+        "html",
+        "ts",
+        "js"
     },
     init_options = {
         linters = {
@@ -164,6 +165,36 @@ nvim_lsp.diagnosticls.setup {
                         column = 3,
                         message = {4}
                     }
+                }
+            },
+            eslint = {
+                sourceName = "eslint",
+                command = "./node_modules/.bin/eslint",
+                rootPatterns = {
+                    ".eslitrc.js",
+                    "package.json"
+                },
+                debounce = 100,
+                args = {
+                    "--cache",
+                    "--stdin",
+                    "--stdin-filename",
+                    "%filepath",
+                    "--format",
+                    "json"
+                },
+                parseJson = {
+                    errorsRoot = "[0].messages",
+                    line = "line",
+                    column = "column",
+                    endLine = "endLine",
+                    endColumn = "endColumn",
+                    message = "${message} [${ruleId}]",
+                    security = "severity"
+                },
+                securities = {
+                    [2] = "error",
+                    [1] = "warning"
                 }
             }
         },
